@@ -1,0 +1,367 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        content: ["./*.html"],
+        theme: {
+          extend: {
+            spacing: {
+              big: "48rem",
+            },
+          },
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+          },
+          fontFamily: {
+            nunito: ["Nunito", "sans-serif"],
+          },
+        },
+      };
+    </script>
+    <title>Harsh Jain | Biodata</title>
+  </head>
+  <body class="font-nunito">
+    <!-- into section -->
+    <div class="h-1/2 lg:h-screen relative overflow-hidden">
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+        <div class="container mx-auto p-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-bold text-indigo-900 dark:text-white"
+              >Harsh Jain</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+          >
+            <li class="hover:text-gray-500">
+              <a href="#">home</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#about">about me</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#myphotos">My Photos</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#family">Family</a>
+            </li>
+          </ul>
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center uppercase"
+          >
+            <li>
+              <a id="hLink" href="#">home</a>
+            </li>
+            <li>
+              <a id="hLink" href="#about">about me</a>
+            </li>
+            <li>
+              <a id="hLink" href="#myphotos">My Photos</a>
+            </li>
+            <li>
+              <a id="hLink" href="#family">Family</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image -->
+      <img
+        class="mx-auto h-[100%] w-[100%] object-cover"
+        src="./img/coverphoto.jpg"
+        alt=""
+      />
+    </div>
+
+    <!--my about-->
+    <div id="about" class="px-10 dark:bg-slate-900">
+      <div class="container mx-auto py-40 grid grid-cols items-center gap-5">
+        <h1 class="text-3xl text-indigo-600 font-bold text-center">
+          Personal details
+        </h1>
+        <div class="grid grid-cols-2">
+          <div class="">Name :</div>
+          <div class="">Harsh Jain (Duranjaya)</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Date of Birth :</div>
+          <div class="">6 June 2000</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Time of Birth :</div>
+          <div class="">10:19 PM</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Place of Birth :</div>
+          <div class="">Bikaner, Rajasthan</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Rashi :</div>
+          <div class="">Kark (Janam rashi), Mithuna (Naam rashi)</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Nakshatra :</div>
+          <div class="">Ashlesha</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Complexion :</div>
+          <div class="">Fair</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Height :</div>
+          <div class="">5 feet 9 inches</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Education :</div>
+          <div class="">Master of computer application</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">University :</div>
+          <div class="">Savitri Bai Phule Pune University</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Religion/Caste :</div>
+          <div class="">Jain (Gorji)</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Job/Occupation :</div>
+          <div class="">Software Engineer at Amazatic Solution</div>
+        </div>
+        <h1 class="text-3xl text-indigo-600 font-bold text-center">
+          Family details
+        </h1>
+        <div class="grid grid-cols-2">
+          <div class="">Father Name :</div>
+          <div class="">Yogesh Jain</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Mother Name :</div>
+          <div class="">Teena Jain</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Mother's Occupation</div>
+          <div class="">Tutor</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Grand Father (Mother's Side) :</div>
+          <div class="">Tolaram Ji Mahatma</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Grand Mother (Mother's Side) :</div>
+          <div class="">Sampat Devi Mahatma</div>
+        </div>
+        <h1 class="text-3xl text-indigo-600 font-bold text-center">
+          Contact details
+        </h1>
+        <div class="grid grid-cols-2">
+          <div class="">Contact Number :</div>
+          <div class="">9950045937, 8003452070</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Home Town Address :</div>
+          <div class="">
+            Opp. Laxmi Plaza, GS Road, Chhimpo ka Mohlla, Bikaner, Rajasthan
+            334001
+          </div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="">Current Address :</div>
+          <div class="">
+            Bhakti Sadan, Lane No 7, Laxmi Nagar, Pimpri-Gurav, Pune,
+            Maharashtra 411061
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- works -->
+    <div id="myphotos" class="py-40 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <!-- <h1 class="text-indigo-600 font-bold">Photos</h1> -->
+          <h1 class="text-3xl text-indigo-600 font-bold">My Photos</h1>
+          <!-- <p class="w-1/2 text-center text-gray-400">
+            I help designers, small agencies and businesses bring their ideas to
+            life. Powered by Figma, VS Code and coffee, I turn your requirements
+            into a well-designed websites
+          </p> -->
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (1).jpeg" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (3).jpeg" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (2).jpeg" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (11).jpeg" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (10).jpeg" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (4).jpeg" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (5).jpeg" />
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (6).jpeg" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (7).jpeg" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (8).jpeg" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (9).jpeg" />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/myimage (12).jpeg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="family" class="py-40 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-3xl text-indigo-600 font-bold">Family</h1>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/mummy.jpeg" />
+            <p class="text-center">Maa</p>
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/bausa.jpg" />
+            <p class="text-center">Nana</p>
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img src="./img/maa.jpg" />
+            <p class="text-center">Nani</p>
+          </div>
+          <!-- card -->
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full bg-[#312E81]">
+      <div class="container mx-auto p-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl font-bold text-white">Harsh Jain</span>
+        </div>
+        <span class="hidden md:block font-medium text-white"
+          >©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Design with ❤️ by Harsh Jain.</span
+        >
+        <div class="flex gap-2">
+          <a href="https://www.instagram.com/harshjain0606_/" target="_blank"
+            ><img
+              class="w-4 cursor-pointer"
+              src="./img/instagram.svg"
+              alt="instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/harsh-jain-84b09515b"
+            target="_blank"
+            ><img
+              class="w-4 cursor-pointer"
+              src="./img/linkedin.svg"
+              alt="linkedin"
+          /></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100009060512769"
+            target="_blank"
+            ><img
+              class="w-4 cursor-pointer"
+              src="./img/facebook.svg"
+              alt="facebook"
+          /></a>
+          <a href="https://github.com/harshjain47" target="_blank"
+            ><img
+              class="w-4 cursor-pointer"
+              src="./img/github.svg"
+              alt="github"
+          /></a>
+          <a href="https://twitter.com/Harshjain0606" target="_blank"
+            ><img class="w-4 cursor-pointer" src="./img/x.svg" alt="twitter"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
