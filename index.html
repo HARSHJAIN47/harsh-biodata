@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,7 +32,7 @@
     </script>
     <title>Harsh Jain | Biodata</title>
   </head>
-  <body class="font-nunito">
+  <body class="font-nunito dark:bg-slate-900 dark:text-white">
     <!-- into section -->
     <div class="h-1/2 lg:h-screen relative overflow-hidden">
       <!-- navbar -->
@@ -59,14 +59,75 @@
               <a href="#family">Family</a>
             </li>
           </ul>
-          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
+          <button
+            id="theme-toggle"
+            class="w-6 h-6 cursor-pointer focus:outline-none dark:text-white"
+          >
+            <svg
+              id="moon-icon"
+              class="w-6 h-6 hidden"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              ></path>
+            </svg>
+            <svg
+              id="sun-icon"
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 0 11-8 0 4 4 0 018 0z"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="hamburger"
+            class="md:hidden cursor-pointer z-20 relative w-6 h-6"
+          >
+            <div id="hamburger-icon" class="space-y-1">
+              <div
+                class="w-6 h-0.5 bg-black dark:bg-white transition-all"
+              ></div>
+              <div
+                class="w-6 h-0.5 bg-black dark:bg-white transition-all"
+              ></div>
+              <div
+                class="w-6 h-0.5 bg-black dark:bg-white transition-all"
+              ></div>
+            </div>
+            <div id="close-icon" class="hidden absolute top-0 left-0">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </div>
           </div>
           <ul
             id="menu"
-            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center uppercase"
+            class="hidden bg-indigo-900 dark:bg-indigo-800 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center uppercase"
           >
             <li>
               <a id="hLink" href="#">home</a>
@@ -93,44 +154,46 @@
     </div>
 
     <!--my about-->
-    <div id="about" class="px-10 dark:bg-slate-900">
+    <div id="about" class="md:px-10 px-6 dark:bg-slate-900 dark:text-white">
       <div class="container mx-auto py-40 grid grid-cols items-center gap-5">
-        <h1 class="text-3xl text-indigo-600 font-bold text-center">
+        <h1
+          class="text-3xl text-indigo-600 dark:text-white font-bold text-center"
+        >
           Personal details
         </h1>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Name :</div>
           <div class="">Harsh Jain (Duranjaya)</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Date of Birth :</div>
           <div class="">6 June 2000</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Time of Birth :</div>
           <div class="">10:19 PM</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Place of Birth :</div>
           <div class="">Bikaner, Rajasthan</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Rashi :</div>
           <div class="">Kark (Janam rashi), Mithuna (Naam rashi)</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Nakshatra :</div>
           <div class="">Ashlesha</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Complexion :</div>
           <div class="">Fair</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Height :</div>
           <div class="">5 feet 9 inches</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Education :</div>
           <div class="">Master of computer application</div>
         </div>
@@ -138,52 +201,56 @@
           <div class="">University :</div>
           <div class="">Savitri Bai Phule Pune University</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Religion/Caste :</div>
           <div class="">Jain (Gorji)</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Job/Occupation :</div>
           <div class="">Senior Software Engineer at Fiserv</div>
         </div>
-        <h1 class="text-3xl text-indigo-600 font-bold text-center">
+        <h1
+          class="text-3xl text-indigo-600 dark:text-white font-bold text-center"
+        >
           Family details
         </h1>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Father Name :</div>
           <div class="">Yogesh Jain</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Mother Name :</div>
           <div class="">Teena Jain</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Mother's Occupation :</div>
-          <div class="">Tutor</div>
+          <div class="">Tutor (former)</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Grand Father (Mother's Side) :</div>
           <div class="">Tolaram Ji Mahatma</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Grand Mother (Mother's Side) :</div>
           <div class="">Sampat Devi Mahatma</div>
         </div>
-        <h1 class="text-3xl text-indigo-600 font-bold text-center">
+        <h1
+          class="text-3xl text-indigo-600 dark:text-white font-bold text-center"
+        >
           Contact details
         </h1>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Contact Number :</div>
           <div class="">9950045937, 8003452070</div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Home Town Address :</div>
           <div class="">
             Opp. Laxmi Plaza, GS Road, Chhimpo ka Mohlla, Bikaner, Rajasthan
             334001
           </div>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <div class="">Current Address :</div>
           <div class="">
             Bhakti Sadan, Lane No 7, Laxmi Nagar, Pimpri-Gurav, Pune,
@@ -199,7 +266,9 @@
         <!-- top -->
         <div class="flex flex-col gap-3 items-center">
           <!-- <h1 class="text-indigo-600 font-bold">Photos</h1> -->
-          <h1 class="text-3xl text-indigo-600 font-bold">My Photos</h1>
+          <h1 class="text-3xl text-indigo-600 dark:text-white font-bold">
+            My Photos
+          </h1>
           <!-- <p class="w-1/2 text-center text-gray-400">
             I help designers, small agencies and businesses bring their ideas to
             life. Powered by Figma, VS Code and coffee, I turn your requirements
@@ -280,31 +349,33 @@
       </div>
     </div>
 
-    <div id="family" class="py-40 dark:bg-slate-900">
+    <div id="family" class="py-40 dark:bg-slate-900 dark:text-white">
       <div class="container mx-auto">
         <!-- top -->
         <div class="flex flex-col gap-3 items-center">
-          <h1 class="text-3xl text-indigo-600 font-bold">Family</h1>
+          <h1 class="text-3xl text-indigo-600 dark:text-white font-bold">
+            Family
+          </h1>
         </div>
         <!-- bottom -->
         <div class="p-5 sm:p-0 flex flex-wrap justify-between">
           <!-- card -->
           <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 dark:bg-slate-800"
           >
             <img src="./img/mummy.jpeg" />
             <p class="text-center">Maa</p>
           </div>
           <!-- card -->
           <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 dark:bg-slate-800"
           >
             <img src="./img/bausa.jpg" />
             <p class="text-center">Nana</p>
           </div>
           <!-- card -->
           <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 dark:bg-slate-800"
           >
             <img src="./img/maa.jpg" />
             <p class="text-center">Nani</p>
